@@ -3,9 +3,137 @@
 <head>
   <title>Revolutionize Your Dental Inventory with DentaIn</title>
   <style>
-    /* ... (Previous CSS styles) ... */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
 
-    /* Styles for the inventory section */
+    header {
+      background-color: #d9534f; /* Red color */
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+      background-image: url("dental_banner.jpg"); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(217, 83, 79, 0.6);
+      z-index: 0;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background-color: #e06666; /* Slightly lighter red */
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #f4a4a4; /* Lighter red on hover */
+      color: black;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+
+    strong {
+      color: black;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .purchase-link {
+      display: block;
+      background-color: #4CAF50; /* Green color */
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .purchase-link:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #e06666;
+      color: white;
+    }
+
+    /* Inventory section styles */
     #inventorySection {
       margin-top: 20px;
     }
@@ -17,6 +145,29 @@
 
     #supplyList li {
       margin-bottom: 10px;
+      background-color: #f0f0f0; /* Light gray background for list items */
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    #supplyList li.scanned {
+      background-color: #dff0d8; /* Greenish background for scanned items */
+    }
+
+    #barcodeInput {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #5cb85c; /* Green button */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -110,6 +261,15 @@
 
   <script>
     // ... (JavaScript functions from previous example) ...
+
+    // Add class to highlight scanned items
+    function updateInventory(itemName) {
+      var listItem = document.querySelector('li[data-item="' + itemName + '"]');
+      var countSpan = listItem.querySelector('.count');
+      var currentCount = parseInt(countSpan.textContent);
+      countSpan.textContent = currentCount + 1;
+      listItem.classList.add("scanned"); // Highlight the scanned item
+    }
   </script>
 
 </body>
