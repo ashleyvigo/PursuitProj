@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dental Inventory Problem</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dental Inventory Problem</h1>
+  <p>Our dental office struggles with inaccurate inventory tracking, leading to stockouts, overstocking, and wasted expired supplies. We need a system that ensures real-time accuracy and efficiency.</p>
+</body>
+</html>
