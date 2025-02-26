@@ -1,87 +1,97 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
-<title>Dental Office Inventory Solution - DentaIn</title>  
-<style>  
-  body {  
-    font-family: 'Arial', sans-serif;
-    margin: 0;  
-    padding: 0;  
-    background-color: #f8f8f8; /* Neutral background color */
-    color: #333;  
-  }  
-  
-  header {  
-    background: #333;  
-    color: white;  
-    text-align: center;  
-    padding: 1em 0;  
-  }  
-  
-  nav {
-    background-color: #444;
-    overflow: hidden;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dental Office Inventory Solution - DentaIn</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8; 
+      color: #333;
+      background-image: url("dentist_patient.jpg"); /* Replace with your image URL */
+      background-size: cover; /* Or 'contain' if you want to avoid cropping */
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Optional: Keeps background fixed while scrolling */
+    }
 
-  nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+    header {
+      background-color: rgba(167, 196, 188, 0.8); /* Pastel green with transparency */
+      color: black;
+      text-align: center;
+      padding: 1em 0;
+    }
 
-  nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  section {  
-    padding: 20px;  
-    margin: 20px; /* Adjusted margin for better spacing */
-    background: white;  
-    border-radius: 8px;  
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
-  }  
-  
-  h1, h2 {  
-    color: #333;  
-  }  
-  
-  ul {  
-    list-style-type: disc;  
-    padding-left: 40px;  
-  }  
-  
-  strong { /* Style for key points */  
-    color: black;   
-    font-weight: bold;  
-  }
+    header h1 { 
+      font-size: 3em; 
+      margin-bottom: 0.2em; 
+      font-weight: bold;
+    }
 
-  .container {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    nav {
+      background-color: rgba(176, 217, 177, 0.8); /* Slightly darker pastel green with transparency */
+      overflow: hidden;
+    }
 
-  .highlight {
-    background-color: #f0f0f0; /* Slightly darker background for highlights */
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-</style>  
-</head>  
-<body>  
-  
-<header>  
-  <h1>DentaIn</h1>  
-  <p>Solve inventory challenges with AI-powered efficiency</p>  
-</header>  
+    nav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px; 
+      background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+
+    strong { 
+      color: black;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(248, 248, 248, 0.9); /* Light gray background with transparency */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight {
+      background-color: rgba(240, 240, 240, 0.9); /* Slightly darker background for highlights */
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DentaIn</h1>
+  <p>Solve inventory challenges with AI-powered efficiency</p>
+</header>
 
 <nav>
   <a href="index.html">Home</a>
@@ -92,60 +102,60 @@
 
 <div class="container">
 
-  <section>  
-    <h2>The Problem</h2>  
-    <p>Dental offices often struggle with <strong>inaccurate inventory tracking</strong>. This leads to:</p>  
-    <ul>  
-      <li><strong>Overstocking</strong> and <strong>wasted expired supplies</strong></li>  
-      <li><strong>Stockouts</strong> of essential items</li>  
-      <li><strong>Time wasted</strong> on manual inventory checks</li>  
-      <li><strong>Lack of visibility</strong> into inventory levels and usage</li>  
-    </ul>  
-    <p>These issues impact <strong>efficiency, cost, and even patient care.</strong></p>  
-  </section>  
-  
-  <section>  
-    <h2>The Solution</h2>  
-    <p>Our AI-powered inventory management system provides:</p>  
+  <section>
+    <h2>The Problem</h2>
+    <p>Dental offices often struggle with <strong>inaccurate inventory tracking</strong>. This leads to:</p>
+    <ul>
+      <li><strong>Overstocking</strong> and <strong>wasted expired supplies</strong></li>
+      <li><strong>Stockouts</strong> of essential items</li>
+      <li><strong>Time wasted</strong> on manual inventory checks</li>
+      <li><strong>Lack of visibility</strong> into inventory levels and usage</li>
+    </ul>
+    <p>These issues impact <strong>efficiency, cost, and even patient care.</strong></p>
+  </section>
+
+  <section>
+    <h2>The Solution</h2>
+    <p>Our AI-powered inventory management system provides:</p>
     <div class="highlight">
-      <ul>  
-        <li><strong>Real-time inventory tracking</strong> with barcode scanning</li>  
-        <li><strong>Automated expiration date tracking and alerts</strong></li>  
-        <li><strong>Accurate cost tracking and reporting</strong></li>  
-        <li>And much more!</li>  
-      </ul> 
+      <ul>
+        <li><strong>Real-time inventory tracking</strong> with barcode scanning</li>
+        <li><strong>Automated expiration date tracking and alerts</strong></li>
+        <li><strong>Accurate cost tracking and reporting</strong></li>
+        <li>And much more!</li>
+      </ul>
     </div>
-    <p>See our <a href="features.html">Features</a> page for a complete list.</p>  
-  </section>  
-  
-  <section>  
-    <h2>Data Requirements</h2>  
-    <p>To maximize the effectiveness of our system, you'll need to provide:</p>  
-    <ul>  
-      <li><strong>Item master data</strong> (name, SKU, vendor, cost, etc.)</li>  
-      <li><strong>Transaction history</strong> (purchases, usage, adjustments)</li>  
-      <li>Optionally, patient and vendor data for deeper insights</li>  
-    </ul>  
-    <p>Learn more on our <a href="data.html">Data</a> page.</p>  
-  </section>  
-  
-  <section>  
-    <h2>Benefits of AI</h2>  
-    <p>AI-powered inventory management offers:</p>  
-    <ul>  
-      <li><strong>Improved accuracy and efficiency</strong></li>  
-      <li><strong>Reduced waste and costs</strong></li>  
-      <li><strong>Better decision-making</strong> with predictive analytics</li>  
-      <li><strong>Enhanced patient care</strong></li>  
-    </ul>  
-    <p>Visit our <a href="ai.html">AI Benefits</a> page for details.</p>  
+    <p>See our <a href="features.html">Features</a> page for a complete list.</p>
+  </section>
+
+  <section>
+    <h2>Data Requirements</h2>
+    <p>To maximize the effectiveness of our system, you'll need to provide:</p>
+    <ul>
+      <li><strong>Item master data</strong> (name, SKU, vendor, cost, etc.)</li>
+      <li><strong>Transaction history</strong> (purchases, usage, adjustments)</li>
+      <li>Optionally, patient and vendor data for deeper insights</li>
+    </ul>
+    <p>Learn more on our <a href="data.html">Data</a> page.</p>
+  </section>
+
+  <section>
+    <h2>Benefits of AI</h2>
+    <p>AI-powered inventory management offers:</p>
+    <ul>
+      <li><strong>Improved accuracy and efficiency</strong></li>
+      <li><strong>Reduced waste and costs</strong></li>
+      <li><strong>Better decision-making</strong> with predictive analytics</li>
+      <li><strong>Enhanced patient care</strong></li>
+    </ul>
+    <p>Visit our <a href="ai.html">AI Benefits</a> page for details.</p>
   </section>
 
 </div>
 
-  <footer>  
-    <p>&copy; 2025 DentaIn</p>  
-  </footer>  
-  
-</body>  
+  <footer>
+    <p>&copy; 2025 DentaIn</p>
+  </footer>
+
+</body>
 </html>
