@@ -7,36 +7,35 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8; 
+      background-color: #f8f8f8;
       color: #333;
-      background-image: url("dentist_patient.jpg"); /* Replace with your image URL */
-      background-size: cover; /* Or 'contain' if you want to avoid cropping */
-      background-repeat: no-repeat;
-      background-attachment: fixed; /* Optional: Keeps background fixed while scrolling */
     }
 
     header {
-      background-color: rgba(167, 196, 188, 0.8); /* Pastel green with transparency */
-      color: black;
+      background-color: #d9534f; /* Red color */
+      color: white; /* White font color for contrast */
       text-align: center;
       padding: 1em 0;
+      background-image: url("dental_banner.jpg"); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center; /* Optional: center the image */
     }
 
-    header h1 { 
-      font-size: 3em; 
-      margin-bottom: 0.2em; 
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
       font-weight: bold;
     }
 
     nav {
-      background-color: rgba(176, 217, 177, 0.8); /* Slightly darker pastel green with transparency */
+      background-color: #e06666; /* Slightly lighter red */
       overflow: hidden;
     }
 
     nav a {
       float: left;
       display: block;
-      color: black;
+      color: white; /* White font color for contrast */
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -49,10 +48,10 @@
 
     section {
       padding: 20px;
-      margin: 20px; 
-      background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+      margin: 20px;
+      background: white;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     h1, h2 {
@@ -64,7 +63,7 @@
       padding-left: 40px;
     }
 
-    strong { 
+    strong {
       color: black;
       font-weight: bold;
     }
@@ -73,13 +72,13 @@
       max-width: 960px;
       margin: 20px auto;
       padding: 20px;
-      background-color: rgba(248, 248, 248, 0.9); /* Light gray background with transparency */
+      background-color: #f8f8f8;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .highlight {
-      background-color: rgba(240, 240, 240, 0.9); /* Slightly darker background for highlights */
+      background-color: #f0f0f0;
       padding: 10px;
       border-radius: 4px;
       margin-bottom: 10px;
