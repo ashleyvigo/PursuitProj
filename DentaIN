@@ -7,7 +7,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f8f8f8; /* Neutral background color */
       color: #333;
     }
 
@@ -35,6 +35,11 @@
       list-style-type: disc;
       padding-left: 40px;
     }
+
+    strong { /* Style for key points */
+      color: black; 
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -46,23 +51,23 @@
 
   <section>
     <h2>The Problem</h2>
-    <p>Dental offices often struggle with inaccurate inventory tracking. This leads to:</p>
+    <p>Dental offices often struggle with <strong>inaccurate inventory tracking</strong>. This leads to:</p>
     <ul>
-      <li>Overstocking and wasted expired supplies</li>
-      <li>Stockouts of essential items</li>
-      <li>Time wasted on manual inventory checks</li>
-      <li>Lack of visibility into inventory levels and usage</li>
+      <li><strong>Overstocking</strong> and <strong>wasted expired supplies</strong></li>
+      <li><strong>Stockouts</strong> of essential items</li>
+      <li><strong>Time wasted</strong> on manual inventory checks</li>
+      <li><strong>Lack of visibility</strong> into inventory levels and usage</li>
     </ul>
-    <p>These issues impact efficiency, cost, and even patient care.</p>
+    <p>These issues impact <strong>efficiency, cost, and even patient care.</strong></p>
   </section>
 
   <section>
     <h2>The Solution</h2>
     <p>Our AI-powered inventory management system provides:</p>
     <ul>
-      <li>Real-time inventory tracking with barcode scanning</li>
-      <li>Automated expiration date tracking and alerts</li>
-      <li>Accurate cost tracking and reporting</li>
+      <li><strong>Real-time inventory tracking</strong> with barcode scanning</li>
+      <li><strong>Automated expiration date tracking and alerts</strong></li>
+      <li><strong>Accurate cost tracking and reporting</strong></li>
       <li>And much more!</li>
     </ul>
     <p>See our <a href="features.html">Features</a> page for a complete list.</p>
@@ -72,8 +77,8 @@
     <h2>Data Requirements</h2>
     <p>To maximize the effectiveness of our system, you'll need to provide:</p>
     <ul>
-      <li>Item master data (name, SKU, vendor, cost, etc.)</li>
-      <li>Transaction history (purchases, usage, adjustments)</li>
+      <li><strong>Item master data</strong> (name, SKU, vendor, cost, etc.)</li>
+      <li><strong>Transaction history</strong> (purchases, usage, adjustments)</li>
       <li>Optionally, patient and vendor data for deeper insights</li>
     </ul>
     <p>Learn more on our <a href="data.html">Data</a> page.</p>
@@ -83,10 +88,10 @@
     <h2>Benefits of AI</h2>
     <p>AI-powered inventory management offers:</p>
     <ul>
-      <li>Improved accuracy and efficiency</li>
-      <li>Reduced waste and costs</li>
-      <li>Better decision-making with predictive analytics</li>
-      <li>Enhanced patient care</li>
+      <li><strong>Improved accuracy and efficiency</strong></li>
+      <li><strong>Reduced waste and costs</strong></li>
+      <li><strong>Better decision-making</strong> with predictive analytics</li>
+      <li><strong>Enhanced patient care</strong></li>
     </ul>
     <p>Visit our <a href="ai.html">AI Benefits</a> page for details.</p>
   </section>
