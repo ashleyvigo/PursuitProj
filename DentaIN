@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dental Office Inventory Solution - DentaIn</title>
+  <title>Revolutionize Your Dental Inventory with DentaIn</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -15,16 +15,39 @@
       background-color: #d9534f; /* Red color */
       color: white; /* White font color for contrast */
       text-align: center;
-      padding: 1em 0;
+      padding: 2em 0; /* Increased padding for more prominence */
       background-image: url("dental_banner.jpg"); /* Replace with your image URL */
       background-size: cover;
-      background-position: center; /* Optional: center the image */
+      background-position: center;
+      position: relative; /* For overlay */
+    }
+
+    header::before { /* Semi-transparent overlay */
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(217, 83, 79, 0.6); /* Red with transparency */
+      z-index: 0;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1; /* Ensure text is above overlay */
     }
 
     header h1 {
-      font-size: 3em;
+      font-size: 3.5em; /* Even larger title */
       margin-bottom: 0.2em;
       font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow */
+    }
+
+    header p {
+      font-size: 1.2em; /* Larger tagline */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     nav {
@@ -39,10 +62,11 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      transition: background-color 0.3s; /* Smooth hover effect */
     }
 
     nav a:hover {
-      background-color: #ddd;
+      background-color: #f4a4a4; /* Lighter red on hover */
       color: black;
     }
 
@@ -83,78 +107,105 @@
       border-radius: 4px;
       margin-bottom: 10px;
     }
+
+    .purchase-link { /* Style the purchase link */
+      display: block;
+      background-color: #4CAF50; /* Green color */
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .purchase-link:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #e06666;
+      color: white;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>DentaIn</h1>
-  <p>Solve inventory challenges with AI-powered efficiency</p>
-</header>
+  <header>
+    <h1>DentaIn</h1>
+    <p>The AI-Powered Solution for Flawless Dental Inventory Management</p>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="features.html">Features</a>
-  <a href="data.html">Data</a>
-  <a href="ai.html">AI Benefits</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="data.html">Data</a>
+    <a href="ai.html">AI Benefits</a>
+  </nav>
 
-<div class="container">
+  <div class="container">
 
-  <section>
-    <h2>The Problem</h2>
-    <p>Dental offices often struggle with <strong>inaccurate inventory tracking</strong>. This leads to:</p>
-    <ul>
-      <li><strong>Overstocking</strong> and <strong>wasted expired supplies</strong></li>
-      <li><strong>Stockouts</strong> of essential items</li>
-      <li><strong>Time wasted</strong> on manual inventory checks</li>
-      <li><strong>Lack of visibility</strong> into inventory levels and usage</li>
-    </ul>
-    <p>These issues impact <strong>efficiency, cost, and even patient care.</strong></p>
-  </section>
-
-  <section>
-    <h2>The Solution</h2>
-    <p>Our AI-powered inventory management system provides:</p>
-    <div class="highlight">
+    <section>
+      <h2>The Problem</h2>
+      <p>Dental offices often struggle with <strong>inaccurate inventory tracking</strong>. This leads to:</p>
       <ul>
-        <li><strong>Real-time inventory tracking</strong> with barcode scanning</li>
-        <li><strong>Automated expiration date tracking and alerts</strong></li>
-        <li><strong>Accurate cost tracking and reporting</strong></li>
-        <li>And much more!</li>
+        <li><strong>Overstocking</strong> and <strong>wasted expired supplies</strong></li>
+        <li><strong>Stockouts</strong> of essential items</li>
+        <li><strong>Time wasted</strong> on manual inventory checks</li>
+        <li><strong>Lack of visibility</strong> into inventory levels and usage</li>
       </ul>
-    </div>
-    <p>See our <a href="features.html">Features</a> page for a complete list.</p>
-  </section>
+      <p>These issues impact <strong>efficiency, cost, and even patient care.</strong></p>
+    </section>
 
-  <section>
-    <h2>Data Requirements</h2>
-    <p>To maximize the effectiveness of our system, you'll need to provide:</p>
-    <ul>
-      <li><strong>Item master data</strong> (name, SKU, vendor, cost, etc.)</li>
-      <li><strong>Transaction history</strong> (purchases, usage, adjustments)</li>
-      <li>Optionally, patient and vendor data for deeper insights</li>
-    </ul>
-    <p>Learn more on our <a href="data.html">Data</a> page.</p>
-  </section>
+    <section>
+      <h2>Introducing DentaIn: The Solution You've Been Waiting For</h2>
+      <p>Our AI-powered inventory management system provides:</p>
+      <div class="highlight">
+        <ul>
+          <li><strong>Real-time inventory tracking</strong> with barcode scanning</li>
+          <li><strong>Automated expiration date tracking and alerts</strong></li>
+          <li><strong>Accurate cost tracking and reporting</strong></li>
+          <li><strong>Predictive analytics</strong> for optimized ordering</li>
+          <li><strong>User-friendly interface</strong> for easy adoption</li>
+          <li>And much more!</li>
+        </ul>
+      </div>
+      <p>See our <a href="features.html">Features</a> page for a complete list.</p>
+      <a href="#" class="purchase-link">Purchase DentaIn Now!</a>  </section>
 
-  <section>
-    <h2>Benefits of AI</h2>
-    <p>AI-powered inventory management offers:</p>
-    <ul>
-      <li><strong>Improved accuracy and efficiency</strong></li>
-      <li><strong>Reduced waste and costs</strong></li>
-      <li><strong>Better decision-making</strong> with predictive analytics</li>
-      <li><strong>Enhanced patient care</strong></li>
-    </ul>
-    <p>Visit our <a href="ai.html">AI Benefits</a> page for details.</p>
-  </section>
+    <section>
+      <h2>Data Requirements</h2>
+      <p>To maximize the effectiveness of our system, you'll need to provide:</p>
+      <ul>
+        <li><strong>Item master data</strong> (name, SKU, vendor, cost, etc.)</li>
+        <li><strong>Transaction history</strong> (purchases, usage, adjustments)</li>
+        <li>Optionally, patient and vendor data for deeper insights</li>
+      </ul>
+      <p>Learn more on our <a href="data.html">Data</a> page.</p>
+    </section>
 
-</div>
+    <section>
+      <h2>Benefits of AI</h2>
+      <p>DentaIn's AI-powered inventory management offers:</p>
+      <ul>
+        <li><strong>Improved accuracy and efficiency</strong></li>
+        <li><strong>Reduced waste and costs</strong></li>
+        <li><strong>Better decision-making</strong> with predictive analytics</li>
+        <li><strong>Enhanced patient care</strong></li>
+      </ul>
+      <p>Visit our <a href="ai.html">AI Benefits</a> page for details.</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 DentaIn</p>
-  </footer>
+  </div>
+
+    <footer>
+      <p>&copy; 2025 DentaIn</p>
+    </footer>
 
 </body>
 </html>
